@@ -13,7 +13,7 @@ export default function BenefitCardList() {
                     <img 
                         src={getImageURL(item.photo)} alt={item.photoAlt} 
                         style={{ 
-                            height: '100%', width: '100%', objectFit: 'cover', borderRadius: '0 70px 70px 0',
+                            height: '100%', width: '100%', objectFit: 'cover', borderRadius: '0 70px 70px 0', scale: 1.1, overflow: 'hidden'
                         }}
                     />
                 </div>

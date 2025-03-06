@@ -45,3 +45,25 @@
 .benefit-card-article > hr{
     border: 1px solid #ffffff;
 }
+
+@media (max-width: 1024px){
+    .benefit-card-article > .title{
+        font-size: 26px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    .benefit-card-item{
+        aspect-ratio: 16/9;
+    }
+}
+
+@media (max-width: 425px){
+    
+
+    .benefit-card-article > .title{
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

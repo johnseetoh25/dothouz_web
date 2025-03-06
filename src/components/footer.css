@@ -36,13 +36,13 @@
 }
 
 .submit-email-form{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
     margin-top: 1rem;
 }
 
 .input-form-style{
-    width: 300px;
+    width: 100%;
     font-size: 16px;
     padding: 15px 2rem;
     border: 1px solid #d9d9d9;
@@ -51,9 +51,10 @@
 }
 
 .submit-form-btn{
+    width: 100%;
     background: #FDB515;
     color: white;
-    padding: 15px 2rem;
+    padding: 0.5rem 1.5rem;
     border: none;
     border-radius: 0 10px 10px 0;
 }
@@ -70,6 +71,13 @@
 @media (max-width: 1024px) {
     .Footer{
         position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 425px) {
+    .Footer-Header{
         display: flex;
         flex-direction: column;
     }

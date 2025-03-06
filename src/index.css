@@ -99,3 +99,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media (max-width: 425px) {
+  section{
+    padding: 5%;
+  }
+}

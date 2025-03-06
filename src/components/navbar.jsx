@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import DotHouzlogo from '../assets/DotHouz_logo.png'
 import './navbar.css'
 import { MenuIcon } from 'lucide-react';
+import { Link } from 'react-scroll';
+import { aboutNavList } from '../library/about-nav';
 
 export default function Navbar() {
   const [isMdScreen, setIsMdScreen] = useState(false);
@@ -31,23 +33,17 @@ export default function Navbar() {
                     <button className="nav-menu-btn" onClick={handleMenuToggle}><MenuIcon/></button>
                     {isOpenMenu ? (
                         <div className="navlink-menu">
-                            <a href="">About</a>
-                            <a href="">Vision</a>
-                            <a href="">Mision</a>
-                            <a href="">Join Us</a>
-                            <a href="">Rewards</a>
-                            <a href="">Subscrible</a>
+                            
                         </div>
                     ): null}
                 </div>
             ):(
                 <div className="navlink-list">
-                    <a href="">About</a>
-                    <a href="">Vision</a>
-                    <a href="">Mision</a>
-                    <a href="">Join Us</a>
-                    <a href="">Rewards</a>
-                    <a href="">Subscrible</a>
+                    {aboutNavList.map((item, index) => (
+                        <span key={index} className='navlink-item'>
+                            <Link className="nav-link" activeClass="active" smooth spy to={item.value}>{item.title}</Link>
+                        </span>
+                    ))}
                 </div>
             )}
             <button className="discover-btn">
