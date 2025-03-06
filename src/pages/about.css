@@ -1,0 +1,40 @@
+/* header */
+.about-header{
+    padding: 10%;
+    text-align: center;
+}
+
+.about-header > h1{
+    text-transform: capitalize;
+}
+
+.about-header > .social-media-list{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* about-us section */
+.about-us > article > label{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #767676;
+}
+
+.about-us > article > h3{
+    font-weight: 600;
+    color: #459DFF;
+}
+
+/* about vision */
+.about-vision{
+    text-align: center;
+}
+
+/* about benefits */
+.about-benefits > h3{
+    text-align: center;
+    font-weight: 600;
+    color: #459DFF;
+}

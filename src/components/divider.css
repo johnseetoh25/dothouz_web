@@ -1,0 +1,34 @@
+.divider{
+    position: relative;
+}
+
+.divider-back{
+    position: absolute;
+    z-index: 1;
+    transform: rotate(1deg);
+    background: #0018DE;
+    width: 100%;
+    height: 60px;
+    
+    
+}
+
+.divider-font{
+    position: absolute;
+    z-index: 2;
+    transform: rotate(-1deg);
+    background: linear-gradient(112.49deg, #9BEBFF -15.2%, #43ADFE 101.56%);
+    color: white;
+    width: 100%;
+    height: 60px;
+    display: flex; 
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.divider-font > h4{
+    font-size: 20px;
+    margin: 0;
+}

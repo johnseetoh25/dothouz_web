@@ -1,0 +1,39 @@
+.navbar{
+    padding: 1rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+
+.logo{
+    align-content: center;
+}
+
+.navlink{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navlink-list{
+    display: flex;
+    gap: 1rem;
+}
+
+.navlink-list > a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #767676;
+}
+
+.discover-btn{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 27px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(0deg, #9BEBFF, #43ADFE);
+    background: linear-gradient(119.73deg, rgba(155, 235, 255, 0.8) 15%, rgba(67, 173, 254, 0.8) 45%);
+}
