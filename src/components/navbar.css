@@ -37,3 +37,26 @@
     background: linear-gradient(0deg, #9BEBFF, #43ADFE);
     background: linear-gradient(119.73deg, rgba(155, 235, 255, 0.8) 15%, rgba(67, 173, 254, 0.8) 45%);
 }
+
+/* Nav Menu */
+.navlink-menu-btn{
+    position: relative;
+}
+
+.nav-menu-btn{
+    padding: 20px 27px;
+    border-radius: 20px;
+    border: none;
+    background: transparent;
+}
+
+.navlink-menu{
+    position: absolute;
+    right: 0;
+    background: lightgray;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

@@ -1,0 +1,47 @@
+.benefit-card-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.benefit-card-item{
+    position: relative;
+    aspect-ratio: 32/10;
+    border-radius: 70px;
+    overflow: hidden;
+}
+
+.benefit-card-image{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    border-radius: 70px;
+}
+
+.benefit-card-overlay{
+    position: absolute;
+    z-index: 2;
+    /* background: linear-gradient(90deg, #FDA37F 27.75%, rgba(253, 163, 127, 0.514541) 48.38%, rgba(253, 163, 127, 0) 57.75%); */
+    border-radius: 70px;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+}
+
+.benefit-card-article{
+    width: 50%;
+    color: #ffffff;
+}
+
+.benefit-card-article > .title{
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 600;
+    margin: 3rem 0 3rem 3rem;
+}
+
+.benefit-card-article > hr{
+    border: 1px solid #ffffff;
+}

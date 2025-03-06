@@ -1,3 +1,10 @@
+.app-install-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
 /* header */
 .about-header{
     padding: 10%;
@@ -15,16 +22,21 @@
 }
 
 /* about-us section */
-.about-us > article > label{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    color: #767676;
+.about-us{
+    padding: 15% 10% 0;
+    display: grid;
+    grid-template-columns: 0.45fr 0.55fr;
+    gap: 2rem;
+}
+
+.about-us > article{
+    align-self: center;
 }
 
 .about-us > article > h3{
-    font-weight: 600;
     color: #459DFF;
+    margin: 2rem 0;
+    text-align: justify;
 }
 
 /* about vision */
@@ -32,9 +44,103 @@
     text-align: center;
 }
 
-/* about benefits */
-.about-benefits > h3{
-    text-align: center;
-    font-weight: 600;
+.about-vision > h3{
     color: #459DFF;
+    margin: 2rem 0;
+}
+
+/* about mission */
+.about-mission > article > h3 {
+    color: #459DFF;
+}
+
+/* about join us */
+.about-join-us > h3{
+    text-align: center;
+    color: #459DFF;
+}
+
+/* about advantages */
+.about-advantages{
+    display: grid;
+    grid-template-columns: 0.5fr 0.55fr;
+    gap: 2rem;
+}
+
+.about-advantages > article{
+    align-self: center;
+}
+
+.about-advantages > article > h3{
+    color: #459DFF;
+    margin: 2rem 0;
+    width: 90%;
+}
+
+/* about unique mechanism */
+.about-unique-mechanism{
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    gap: 2rem;
+}
+.about-unique-mechanism > .about-unique-canvas{
+    position: relative;
+    aspect-ratio: 4/3;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-unique-mechanism > article{
+    align-self: center;
+}
+
+.about-unique-mechanism > article > h3{
+    color: #459DFF;
+    margin: 2rem 0;
+}
+
+/* about believe */
+.about-believe > article {
+    text-align: center;
+}
+
+.about-believe > article > h3{
+    color: #459DFF;
+    margin: 2rem 0;
+}
+
+.about-believe > .about-believe-canvas{
+    position: relative;
+    height: 45vh;
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.about-believe > .about-believe-footer{
+    text-align: center;
+}
+
+/* Screen Responsible */
+@media (max-width: 1024px){
+    /* about believe */
+    .about-believe > .about-believe-canvas{
+        scale: 0.7;
+        
+    }
+}
+
+@media (max-width: 768px){
+    /* about unique mechanism */
+    .about-unique-mechanism{
+        grid-template-columns: 1fr;
+    }
+
+    /* about believe */
+    .about-believe > .about-believe-canvas{
+        scale: 0.7;
+        height: 35vh;
+        margin: 2rem 0;
+        overflow: hidden;
+    }
 }

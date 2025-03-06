@@ -1,5 +1,5 @@
 import React from 'react'
-import { functionCardList } from '../library/funcction-lib'
+import { functionCardList } from '../library/function-lib'
 import './function-card.css'
 import { getImageURL } from '../utils/img-util'
 
