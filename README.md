@@ -1,5 +1,13 @@
-# React + Vite
+# Interview Test 
+## DotHouz Web
+This project utilizes several key technologies to build a modern and efficient frontend application. The main components of the frontend framework employed here are "Vite" and "React".
 
+at same time, i used 2 npm package,
+- luide-react
+- react-scroll
+
+
+# React + Vite
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
