@@ -7,12 +7,57 @@
 
 /* header */
 .about-header{
-    padding: 10%;
-    text-align: center;
+    padding: 5% 10%;
+    position: relative;
+    overflow: hidden;
 }
 
-.about-header > h1{
+.about-header > .header-ring-canvas{
+    position: absolute; 
+    z-index: -2; 
+    top: 12%; 
+    left: -12%; 
+    filter: blur(50px);
+}
+
+.about-header > .header-bubble-canvas{
+    position: absolute; 
+    z-index: -2; 
+    top: 12%; 
+    right: -35%; 
+    filter: blur(30px); 
+    scale: 0.8; 
+    rotate: 45deg;
+}
+
+.about-header > article{
+    text-align: center;
+    position: relative;
+}
+
+.about-header > article > h1{
     text-transform: capitalize;
+    background: linear-gradient(119.73deg, rgba(155, 235, 255, 0.8) 45.01%, rgba(67, 173, 254, 0.8) 78.49%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.about-header > article > p{
+    margin: 3.5rem auto;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #767676;
+    width: 70%;
+}
+
+.about-header-canvas{
+    position: relative;
+    scale: 0.7;
+    height: 50vh;
+    margin: 10rem 0;
 }
 
 .about-header > .social-media-list{
@@ -60,7 +105,7 @@
     position: relative;
     height: 100%;
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 3/4;
 }   
 
 .about-mission-canvas > .overlay{
@@ -68,7 +113,7 @@
     z-index: 3;
     height: 100%;
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 3/4;
     background: linear-gradient(0deg, rgba(255,255,255,1) 5%, rgba(255,255,255,0.25) 10%, rgba(255,255,255, 0) 50%, rgba(255,255,255,0.25) 90%, rgba(255,255,255,1) 95%);
 }
 
@@ -136,6 +181,10 @@
 }
 
 /* about believe */
+.about-believe{
+    position: relative;
+}
+
 .about-believe > article {
     text-align: center;
 }
@@ -147,10 +196,8 @@
 
 .about-believe > .about-believe-canvas{
     position: relative;
-    height: 45vh;
-    width: 100%;
-    margin: 3rem 0;
 }
+
 
 .about-believe > .about-believe-footer{
     text-align: center;
@@ -158,6 +205,18 @@
 
 /* Screen Responsible */
 @media (max-width: 1024px){
+    /* header */
+    .about-header > .header-ring-canvas{
+        top: 15%; 
+        left: -20%; 
+    }
+    
+    .about-header > .header-bubble-canvas{
+        top: 12%; 
+        right: -50%; 
+        scale: 0.6; 
+    }
+
     /* about mission */
     .about-mission{
         display: grid;
@@ -177,6 +236,22 @@
 }
 
 @media (max-width: 768px){
+    /* header */
+    .about-header > .header-ring-canvas{
+        top: 15%; 
+        left: -35%; 
+    }
+    
+    .about-header > .header-bubble-canvas{
+        top: 15%; 
+        right: -60%; 
+        scale: 0.45; 
+    }
+
+    .about-header-canvas{
+        scale: 0.6;
+    }
+
     /* about us */
     .about-us{
         display: flex;
@@ -212,16 +287,47 @@
 
     /* about believe */
     .about-believe > .about-believe-canvas{
-        scale: 0.8;
-        height: 35vh;
+        scale: 1;
+        height: 50vh;
         margin: 2rem 0;
-        overflow: hidden;
+        overflow: unset;
     }
 }
 
 @media (max-width: 425px){
+    /* header */
+    .about-header > .header-ring-canvas{
+        top: 15%; 
+        left: -35%; 
+        scale: 0.2;
+    }
+    
+    .about-header > .header-bubble-canvas{
+        top: 15%; 
+        right: -80%; 
+        scale: 0.2; 
+    }
+    .about-header > article > h1{
+        font-size: 27px;
+        line-height: 35px;
+    }
+
+    .about-header-canvas{
+        scale: 0.4;
+        margin: 5rem, 0;
+        height: 25vh;
+    }
+
+    .about-header > .social-media-list{
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        transform: translateX(-50%);
+    }
+
     /* about us */
     .about-us{
+        padding-top: 30%;
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -229,5 +335,25 @@
     /* about mission */
     .about-mission > .about-mission-canvas{
         scale: 0.8;
+    }
+
+    /* about unique */
+    .about-unique-canvas {
+        aspect-ratio: 1;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .about-unique-canvas > img{
+        object-position: 0px -90px;
+    }
+
+    /* about believe */
+    .about-believe > .about-believe-canvas{
+        scale: 1;
+        height: unset;
+        margin: 2rem 0;
+        overflow: hidden;
     }
 }

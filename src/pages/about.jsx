@@ -5,25 +5,50 @@ import { FacebookIcon, InstagramIcon, LinkedinIcon, SendIcon } from 'lucide-reac
 import FunctionCardList from '../components/function-card'
 import BenefitCardList from '../components/benefit-card'
 import { getImageURL } from '../utils/img-util'
+import PhoneGroup from '../components/phone-group'
 
 export default function About() {
 
   return (
     <>  
         <header id='about' className="about-header">
-            <h1>let's explore Dothouz App future for the creation of digital content and short videos together.</h1>
-            <p>We are committed to create an open, transparent and fair digital platform, functions of Dothouz App including content creation and short videos.</p>
-            <div className="app-install-buttons">
-                <img src={getImageURL('App-Store-Button.png')} alt="iOS Button" />
-                <img src={getImageURL('Google-Play-Button.png')} alt="Android Button" />
+            <article>
+                <h1>let's explore Dothouz App future for the creation of digital content and short videos together.</h1>
+                <p>We are committed to create an open, transparent and fair digital platform, functions of Dothouz App including content creation and short videos.</p>
+                <div className="app-install-buttons">
+                    <img src={getImageURL('App-Store-Button.png')} alt="iOS Button" />
+                    <img src={getImageURL('Google-Play-Button.png')} alt="Android Button" />
+                </div>
+                <img src={getImageURL('bubble-03.png')} alt="bubble" 
+                     style={{ position: 'absolute', zIndex: -1, top: '30px', left: '-60px'}}
+                />
+                <img src={getImageURL('ring-01.png')} alt="ring" 
+                     style={{ position: 'absolute', zIndex: -1, bottom: '-100px', right: '-200px', scale: 0.2}}
+                />
+                <img src={getImageURL('bubble-01.png')} alt="bubble" 
+                     style={{ position: 'absolute', zIndex: -1, bottom: '-500px', left: '-250px', scale: 0.09}}
+                />
+            </article>
+            <div className="about-header-canvas">
+                <img src={getImageURL('phone-01.png')} alt="phone" 
+                    style={{ position: 'absolute', zIndex: 1, bottom: '-250px', left: '50%', transform: 'translateX(-50%)'}}
+                />
+                <img src={getImageURL('header-bg-canvas.png')} alt="bg-canvas" 
+                     style={{ position: 'absolute', zIndex: -1, left: '50%', bottom: '-25%', transform: 'translateX(-50%)'}}
+                />
             </div>
-            {/* <img src={Phone_01} alt="phone-01" /> */}
             <div className="social-media-list">
                 <LinkedinIcon fill='#459DFF' color='#459DFF' size={36}/>
                 <SendIcon color='#459DFF' size={36}/>
                 <FacebookIcon fill='#459DFF' color='none' size={36}/>
                 <InstagramIcon  color='#459DFF' size={36}/>
             </div>
+            <img className='header-ring-canvas'
+                 src={getImageURL('ring-01.png')} alt="ring" 
+            />
+            <img className='header-bubble-canvas'
+                 src={getImageURL('bubble-01.png')} alt="bubble" 
+            />
         </header>
         <Divider/>
         <section className="about-us">
@@ -84,13 +109,13 @@ export default function About() {
                 <h3>The great advantage that Dothouz App has is our blockchain solution</h3>
                 <p>This enables our platform to provide a secure, transparent experience. Coupled with a large community of like-minded users, we create a thriving community that helps users unlock greater earning potential.</p>
             </article>
-            <div id='rewards' className="about-advantages-canvas">
+            <div id='reward' className="about-advantages-canvas">
                 <img src={getImageURL('phone-canvas-01.png')} alt="phone-canvas" 
                      style={{ height: '100%', width: '100%'}}
                 />
             </div>
         </section>
-        <section className="about-unique-mechanism">
+        <section  className="about-unique-mechanism">
             <div className="about-unique-canvas">
                 <img src={getImageURL('chat-bubble-canvas.png')} alt="chat bubble" 
                      style={{ height: '100%', width: '100%', objectFit: 'cover',objectPosition: '0 -150px'}}
@@ -107,20 +132,15 @@ export default function About() {
                 <label>We Believe</label>
                 <h3>The decentralization and transparency of blockchain technology can provide better protection and support for digital creators and audiences, and can also promote the development of the entire short video industry.</h3>
             </article>
-            {/* <div className="about-believe-canvas">
-                <img src={getImageURL('ring-01.png')} alt="ring" 
-                     style={{ position: 'absolute', zIndex: 1, left: '-400px', bottom: '-30px', filter: 'blur(60px)', rotate: '130deg', scale: 1.1}}
-                />
-                <img src={getImageURL('bubble-02.png')} alt="bubble"
-                     style={{ position: 'absolute', zIndex: 1, top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}}
-                />
-                <img src={getImageURL('phone-05.png')} alt="phone-05" 
-                     style={{ position: 'absolute', zIndex: 2, top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}}
+            <div className="about-believe-canvas">
+                <PhoneGroup/>
+                <img src={getImageURL('bubble-02.png')} alt="bubble" 
+                     style={{ position: 'absolute', zIndex: -1, bottom: '-50%', left: '50%', transform: 'translate(-50%, -120%)'}}
                 />
                 <img src={getImageURL('bubble-03.png')} alt="bubble" 
-                     style={{ position: 'absolute', zIndex: 2, left: '80px'}}
+                     style={{ position: 'absolute', zIndex: 1, top: '-80px', left: '-10%' }}
                 />
-            </div> */}
+            </div>
             <div className="about-believe-footer">
                 <p>Let's work together to establish a fairer and more open digital creative and short video industry!</p>
                 <div className="app-install-buttons">
@@ -128,6 +148,9 @@ export default function About() {
                     <img src={getImageURL('Google-Play-Button.png')} alt="Android Button" />
                 </div>
             </div>
+            <img src={getImageURL('ring-01.png')} alt="ring" 
+                 style={{position: 'absolute', zIndex: -1, top: '50%', left: '-10%', filter: 'blur(20px)'}}
+            />
         </section>
     </>
   )

@@ -9,8 +9,6 @@
     background: #0018DE;
     width: 100%;
     height: 60px;
-    
-    
 }
 
 .divider-font{
@@ -25,7 +23,6 @@
     gap: 5rem;
     justify-content: center;
     align-items: center;
-    
 }
 
 .divider-font > h4{
@@ -33,8 +30,24 @@
     margin: 0;
 }
 
+@media (max-width: 1024px) {
+    .divider-font{
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .divider-font{
+        gap: 2rem;
+    }
+}
+
 @media (max-width: 425px) {
-    .divider{
-        scale: 0.9;
+    .divider-font{
+        gap: 1rem;
+    }
+
+    .divider-font > h4{
+        font-size: 16px
     }
 }

@@ -7,7 +7,7 @@
 
 .benefit-card-item{
     position: relative;
-    aspect-ratio: 32/10;
+    aspect-ratio: 32/12;
     border-radius: 70px;
     overflow: hidden;
 }
@@ -60,10 +60,13 @@
 }
 
 @media (max-width: 425px){
-    
+    .benefit-card-item{
+        aspect-ratio: 16/10;
+    }
 
     .benefit-card-article > .title{
         font-size: 20px;
-        line-height: 24px;
+        line-height: 22px;
+        margin: 1rem 0 1rem 1rem;
     }
 }

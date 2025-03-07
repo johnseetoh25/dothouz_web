@@ -62,7 +62,7 @@
 .navlink-menu{
     position: absolute;
     right: 0;
-    background: lightgray;
+    background: #ebebeb;
     padding: 1rem;
     border-radius: 10px;
     display: flex;

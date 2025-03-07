@@ -33,7 +33,11 @@ export default function Navbar() {
                     <button className="nav-menu-btn" onClick={handleMenuToggle}><MenuIcon/></button>
                     {isOpenMenu ? (
                         <div className="navlink-menu">
-                            
+                            {aboutNavList.map((item, index) => (
+                                <span key={index} className='navlink-item'>
+                                    <Link className="nav-link" activeClass="active" smooth spy to={item.value}>{item.title}</Link>
+                                </span>
+                            ))}
                         </div>
                     ): null}
                 </div>
